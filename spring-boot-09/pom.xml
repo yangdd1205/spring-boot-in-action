@@ -4,11 +4,11 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.slowe</groupId>
-	<artifactId>spring-boot-08</artifactId>
+	<artifactId>spring-boot-09</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
-	<name>spring-boot-08</name>
+	<name>spring-boot-09</name>
 	<description>Learning Spring Boot</description>
 
 	<parent>

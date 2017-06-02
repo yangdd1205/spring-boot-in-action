@@ -23,8 +23,6 @@ public class SpringBoot09ApplicationTests {
 
 	/**
 	 *  并没有进行测试
-	 *  
-	 * @throws Exception
 	 */
 	@Test
 	public void test() throws Exception {
