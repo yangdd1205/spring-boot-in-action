@@ -1,0 +1,37 @@
+buildscript {
+	ext {
+		springBootVersion = '1.5.2.RELEASE'
+	}
+	repositories {
+		mavenCentral()
+	}
+	dependencies {
+		classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
+	}
+}
+
+apply plugin: 'java'
+apply plugin: 'eclipse'
+apply plugin: 'org.springframework.boot'
+
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = 1.8
+
+repositories {
+	mavenLocal()
+	mavenCentral()
+}
+//全局排除
+configurations {
+   compile.exclude group:'org.springframework.boot',module: 'spring-boot-starter-logging'
+}
+
+dependencies {
+	compile('org.springframework.boot:spring-boot-starter')
+	compile('org.springframework.boot:spring-boot-starter-log4j2')
+	compile('org.springframework.boot:spring-boot-starter-web')
+	compile('com.fasterxml.jackson.dataformat:jackson-dataformat-yaml')
+	compile('org.apache.logging.log4j:log4j-nosql:2.8.2')
+	compile('org.mongodb:mongodb-driver:3.2.2')
+	testCompile('org.springframework.boot:spring-boot-starter-test')
+}
