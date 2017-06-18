@@ -7,6 +7,8 @@
 
 * `spring-boot-23-mail`由于Spring Boot 1.5.X默认不支持`Velocity`，所以模板改为`Thymeleaf`。
 
+* `spring-boot-25-cache-redis`由于没有Redis环境，所以并**没有做测试**。
+
 ---
 如果错误，恳请指出。
 
