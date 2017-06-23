@@ -9,6 +9,8 @@
 
 * `spring-boot-25-cache-redis`由于没有Redis环境，所以并**没有做测试**。
 
+* `spring-boot-30-actuator`中，由于Actuator在Spring Boot 1.5.2中已经有了权限控制，不是所有监控信息都暴露出来，具体的可以参考[官网文档](http://docs.spring.io/spring-boot/docs/1.5.2.RELEASE/reference/htmlsingle/#production-ready-endpoints)。
+
 ---
 如果错误，恳请指出。
 
